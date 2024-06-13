@@ -1,0 +1,9 @@
+[Unit]
+Description=Namtso Bluetooth service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bluetooth-namtso.sh
+
+[Install]
+WantedBy=multi-user.target
