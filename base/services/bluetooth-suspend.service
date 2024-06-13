@@ -1,0 +1,10 @@
+[Unit]
+Description= Namtso Bluetooth suspend
+Before=suspend.target
+ 
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/namtso_bluetooth_suspend.sh
+ 
+[Install]
+WantedBy=suspend.target
