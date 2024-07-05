@@ -48,7 +48,7 @@ done
 LIST_MENU_VALUE[$index]=TRUE
 
 if [ ${LINUX_VER::4} == "5.10" ];then
-selected_mode=$(zenity --height=275 \
+selected_mode=$(zenity --height=500 \
 				--list --radiolist \
 				--title 'FAN Setting' \
 				--text 'Select FAN Mode' \
