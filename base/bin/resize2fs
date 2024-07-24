@@ -144,7 +144,7 @@ do_expand_partition()
 do_expand_ext4()
 {
 	echo -e "\n### [resize2fs] Start resizing ext4 partition $1 now\n" >> ${Log}
-	resize2fs ${rootpart} >> ${Log} 2>&1
+	resize2fs $1 >> ${Log} 2>&1
 }
 
 do_expand_btrfs()
